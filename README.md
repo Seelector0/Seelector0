@@ -69,11 +69,11 @@ async function testYaRu(){
     const result = await page.$('.serp-item');
 
     console.log('Сравнение ОР и ФР');
-     if (result === null) {
-        console.log('Результаты поиска не найдены');
-    } else {
-          console.log('Результаты поиска отобразились')
-    }
+    if (result === null) 
+    {console.log('Результаты поиска не найдены');} 
+    else 
+    {console.log('Результаты поиска отобразились')}
+    
     console.log('Закрытие браузера');
     await browser.close();
 }
