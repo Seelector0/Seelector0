@@ -42,45 +42,9 @@
 •Изучил основы автоматизации с библиотекой Puppeteer<br>
 
 Пример автотеста:<br>
-https://github.com/Seelector0/Autotest/blob/d25a31f1e6964ce256448616e16239e0accd5cc2/Autotest
+https://github.com/Seelector0/Autotest/blob/c58fddb8bdb156f372c14113eaf8c1422576c4b3/Autotest
 
-```
-const puppeteer = require('puppeteer');
 
-async function testYaRu(){
-    console.log('Запуск браузера');
-    const browser = await puppeteer.launch();
-
-    console.log('Создание новой вкладки в браузере');
-    const page = await browser.newPage();
-
-    console.log('Переход на страницу ya.ru');
-    await page.goto('https://ya.ru/');
-
-    console.log('Ввод текста "Автоматизация тестирования" в поисковую строку');
-    const searchField = await page.$('#text');
-    await searchField.type('Автоматизация тестирования');
-
-    console.log('Клик в кнопку "Найти"');
-    const searchButton = await page.$('.button[type=submit]');
-    await searchButton.click();
-    
-    console.log('Ожидание перехода в страницу поисковых результатов');
-    await page.waitForNavigation();
-
-    console.log('Получение элементов результата поиска');
-    const result = await page.$('.serp-item');
-
-    console.log('Сравнение ОР и ФР');
-    if (result === null) 
-    {console.log('Результаты поиска не найдены');} 
-    else 
-    {console.log('Результаты поиска отобразились')}
-    
-    console.log('Закрытие браузера');
-    await browser.close();
-}
-```
 
 **Дипломная работа**<br>
 •Тестирование веб-приложения Яндекс.Самокат<br>
