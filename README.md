@@ -42,6 +42,8 @@
 •Изучил основы автоматизации с библиотекой Puppeteer<br>
 
 Пример автотеста:<br>
+https://github.com/Seelector0/Autotest.git
+
 ```
 const puppeteer = require('puppeteer');
 
