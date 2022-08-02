@@ -41,6 +41,7 @@
 •Изучил основы JavaScript <br>
 •Изучил основы автоматизации с библиотекой Puppeteer<br>
 
+Пример выполненого автотеста:<br>
 ```
 const puppeteer = require('puppeteer');
 
