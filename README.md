@@ -20,15 +20,15 @@
 •Заведение баг-репортов по результатам тестирования<br>
 
 [Ссылка на проект](https://docs.google.com/spreadsheets/d/1CC45X7BmoMc7-vFV8mohzl2HbzJndpYUNHe51AtwTcc/edit#gid=899462569)<br>
-[Примеры баг-репортов] (https://drive.google.com/drive/folders/1NvrOuDARsnLQhJjGpUcHbuvJMvT206nG?usp=sharing)<br>
+[Примеры баг-репортов](https://drive.google.com/drive/folders/1NvrOuDARsnLQhJjGpUcHbuvJMvT206nG?usp=sharing)<br>
 
 **Спринт 3**<br>
 •Проводил тестирование мобильного приложения Яндекс.Метро, с помощью реального устройства и эмулятора Android studio<br>
 •Проводил тестирование бэкенда сервиса Яндекс.Прилавок API с помощью программы Postman. Протоколы REST и SOAP. Анализировал документацию к API в Apidoc и Swagger<br>
 •Заведение баг-репортов по результатам тестирования<br>
 
-[Ссылка на проект](https://docs.google.com/spreadsheets/d/1XXvwTIvaoni9XIDVhbG13rGYnw-Lmhs_ohhoA4_A1s8/edit#gid=857523888)
-[Примеры баг-репортов] (https://drive.google.com/drive/folders/1p0SnohfDF-U7tv1CXQ2hoM8LvZfoqWhR?usp=sharing)<br>
+[Ссылка на проект](https://docs.google.com/spreadsheets/d/1XXvwTIvaoni9XIDVhbG13rGYnw-Lmhs_ohhoA4_A1s8/edit#gid=857523888)<br>
+[Примеры баг-репортов](https://drive.google.com/drive/folders/1p0SnohfDF-U7tv1CXQ2hoM8LvZfoqWhR?usp=sharing)<br>
 
 **Спринт 4**<br>
 •Работал в консоли с логами. Подключался к удаленному серверу. <br>
@@ -49,4 +49,4 @@
 •Тестирование API Яндекс.Самокат<br>
 
 Ссылка на проект<br>
-[Примеры баг-репортов] (https://drive.google.com/drive/folders/1TPWPbL6ql2drkCHa8CO8NDrmMymhGQOc?usp=sharing)<br>
+[Примеры баг-репортов](https://drive.google.com/drive/folders/1TPWPbL6ql2drkCHa8CO8NDrmMymhGQOc?usp=sharing)<br>
