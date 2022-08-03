@@ -11,7 +11,6 @@
 
 [Ссылка на проект](https://docs.google.com/spreadsheets/d/1NeUJ14WFq1YXWjXjn3DEMvHp89AUG6n2bw_ZCe5Mz5k/edit#gid=1058266973)<br>
 
-
 **Спринт 2**<br>
 
 •Изучил принципы работы веб-приложения (клиент-серверная архитектура, протоколы HTTP и HTTPS, структура HTTP-запроса ответ)<br>
@@ -21,6 +20,7 @@
 •Заведение баг-репортов по результатам тестирования<br>
 
 [Ссылка на проект](https://docs.google.com/spreadsheets/d/1CC45X7BmoMc7-vFV8mohzl2HbzJndpYUNHe51AtwTcc/edit#gid=899462569)<br>
+[Примеры баг-репортов] (https://drive.google.com/drive/folders/1NvrOuDARsnLQhJjGpUcHbuvJMvT206nG?usp=sharing)<br>
 
 **Спринт 3**<br>
 •Проводил тестирование мобильного приложения Яндекс.Метро, с помощью реального устройства и эмулятора Android studio<br>
@@ -28,7 +28,7 @@
 •Заведение баг-репортов по результатам тестирования<br>
 
 [Ссылка на проект](https://docs.google.com/spreadsheets/d/1XXvwTIvaoni9XIDVhbG13rGYnw-Lmhs_ohhoA4_A1s8/edit#gid=857523888)
-
+[Примеры баг-репортов] (https://drive.google.com/drive/folders/1p0SnohfDF-U7tv1CXQ2hoM8LvZfoqWhR?usp=sharing)<br>
 
 **Спринт 4**<br>
 •Работал в консоли с логами. Подключался к удаленному серверу. <br>
@@ -41,10 +41,7 @@
 •Изучил основы JavaScript <br>
 •Изучил основы автоматизации с библиотекой Puppeteer<br>
 
-Пример автотеста:<br>
-https://github.com/Seelector0/Autotest/blob/c58fddb8bdb156f372c14113eaf8c1422576c4b3/Autotest
-
-
+[Пример автотеста](https://github.com/Seelector0/Autotest/blob/c58fddb8bdb156f372c14113eaf8c1422576c4b3/Autotest)<br>
 
 **Дипломная работа**<br>
 •Тестирование веб-приложения Яндекс.Самокат<br>
@@ -52,4 +49,4 @@ https://github.com/Seelector0/Autotest/blob/c58fddb8bdb156f372c14113eaf8c1422576
 •Тестирование API Яндекс.Самокат<br>
 
 Ссылка на проект<br>
-
+[Примеры баг-репортов] (https://drive.google.com/drive/folders/1TPWPbL6ql2drkCHa8CO8NDrmMymhGQOc?usp=sharing)<br>
