@@ -43,10 +43,3 @@
 
 [Пример автотеста](https://github.com/Seelector0/Autotest/blob/c58fddb8bdb156f372c14113eaf8c1422576c4b3/Autotest)<br>
 
-**Дипломная работа**<br>
-•Тестирование веб-приложения Яндекс.Самокат<br>
-•Тестирование мобильного приложения Яндекс.Самокат<br>
-•Тестирование API Яндекс.Самокат<br>
-
-Ссылка на проект<br>
-[Примеры баг-репортов](https://drive.google.com/drive/folders/1TPWPbL6ql2drkCHa8CO8NDrmMymhGQOc?usp=sharing)<br>
