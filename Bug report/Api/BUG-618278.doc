@@ -1,0 +1,250 @@
+<!doctype html><html><head><title>[#BUG-618278] Код и статус ответа 200 ОК при отправке POST /api/v1/kits/2/products запроса на добавление продуктов в набор с несуществующем id продукта</title><meta http-equiv="Content-Type" content="application/vnd.ms-word; charset=UTF-8"/><style>.tableBorder, .grid { background-color: #fff; width: 100%; border-collapse: collapse; }.tableBorder td, .grid td { vertical-align: top; padding: 2px; border: 1px solid #ccc; }.noPadding { padding: 0 !important; }h3 .subText { font-size: 60%; font-weight: normal; }td.blank { padding: 0; margin: 0; }.blank td { border: none; }#descriptionArea { margin: 0; padding: 2px; border: 1px solid #ccc; }</style></head><body><table class="tableBorder" cellpadding="0" cellspacing="0" style="border:0;width:100%"><tr><td colspan="2" style="background-color:#f0f0f0;width:100%;vertical-align:top"><h3>[BUG-618278]&nbsp;<a href="https://tracker.yandex.ru/r/BUG-618278?source_from=doc&source_type=export">Код и статус ответа 200 ОК при отправке POST /api/v1/kits/2/products запроса на добавление продуктов в набор с несуществующем id продукта</a><span class="subText"> Создано: 02 июня 2022 в 15:35&nbsp;Обновлено: 02 июня 2022 в 22:22</span></h3></td></tr><tr><td style="width:20%"><b>Статус:</b></td><td style="width:80%">Открыт</td></tr><tr><td style="width:20%"><b>Очередь:</b></td><td style="width:80%"><a href="https://tracker.yandex.ru/r/BUG">Баг-репорты</a></td></tr><tr><td><b>Компоненты:</b></td><td>Нет компонента</td></tr><tr><td><b>Найдено в версиях:</b></td><td>Без версии</td></tr><tr><td><b>Исправить в версиях:</b></td><td>Без версии</td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" style="border:0;width:100%"><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Тип:</b></td><td style="background-color:#ffffff;vertical-align:top;width:30%">Ошибка</td><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Приоритет:</b></td><td style="background-color:#ffffff;vertical-align:top;width:30%;white-space:nowrap">Средний</td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Автор:</b></td><td style="background-color:#ffffff;vertical-align:top;width:30%"><a href="https://staff.yandex.ru/odintsov123?org=6912661">Кирилл Одинцов</a></td><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Исполнитель:</b></td><td style="background-color:#ffffff;vertical-align:top;width:30%;white-space:nowrap">Нет исполнителя</td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Резолюция:</b></td><td style="background-color:#ffffff;vertical-align:top;width:30%">Не разрешен</td><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Проект:</b></td><td style="background-color:#ffffff;vertical-align:top;width:30%">Без проекта</td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Теги:</b></td><td colspan="3" style="background-color:#ffffff;vertical-align:top">Нет тега</td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Оценка:</b></td><td colspan="3" style="background-color:#ffffff;vertical-align:top;white-space:nowrap;width:80%">Не задана</td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Затрачено времени:</b></td><td colspan="3" style="background-color:#ffffff;vertical-align:top;white-space:nowrap;width:80%">Не задано</td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Первоначальная оценка:</b></td><td colspan="3" style="background-color:#ffffff;vertical-align:top;white-space:nowrap;width:80%">Не задана</td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" style="border:0;width:100%"><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Изменил:</b></td><td colspan="3" style="background-color:#ffffff;vertical-align:top;width:80%"><a href="https://staff.yandex.ru/odintsov123?org=6912661">Кирилл Одинцов</a></td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Комментариев без сообщения:</b></td><td colspan="3" style="background-color:#ffffff;vertical-align:top;width:80%">0</td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Комментариев с сообщением:</b></td><td colspan="3" style="background-color:#ffffff;vertical-align:top;width:80%">0</td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Проголосовало:</b></td><td colspan="3" style="background-color:#ffffff;vertical-align:top;width:80%">0</td></tr><tr><td style="background-color:#f0f0f0;vertical-align:top;width:20%"><b>Статус изменен:</b></td><td colspan="3" style="background-color:#ffffff;vertical-align:top;width:80%">02 июня 2022 в 15:35</td></tr></table><br/><table cellpadding="2" cellspacing="0" align="center" style="border:0;width:100%"><tr><td align="center" style="background-color:#bbbbbb;width:1%;white-space:nowrap">&nbsp;<font style="color:#ffffff"><b>Описание</b></font>&nbsp;</td><td>&nbsp;</td></tr></table><table cellpadding="0" cellspacing="0" style="border:0;width:100%"><tr><td id="descriptionArea"><div class="wiki-doc wiki-doc_magiclinks_yes i-bem" data-bem='{"wiki-doc":{"user":{"codeTheme":"github"},"wiki-attrs":{"lang":"ru","render_html":true,"code_theme":"github","magiclinks_url":"https://magiclinks.yandex.{tld}/magiclinks/v1/links","pos_end":6698,"mode":"view","env":"production","pos_start":0}}}'><div class="wiki-p">Окружение: <br/>ОС: Mac OS 12.3. Postman Version 9.20.3<br/>Хост <a class="b-link wiki-ref wiki-ref wiki-ref_magiclink_yes" href="https://2760bd22-abcc-46c1-97b3-7fc50318dc36.serverhub.praktikum-services.ru/" target="_blank" title="Внешняя ссылка (откроется в новом окне)">https://2760bd22-abcc-46c1-97b3-7fc50318dc36.serverhub.praktikum-services.ru/</a></div><div class="wiki-psep"></div><div class="wiki-p">Описание:<br/>При добавление продуктов в набор, если в теле запроса в массиве "productsList" ввести несуществующий "id" в БД, не приходит ошибка от сервера.</div><div class="wiki-psep"></div><div class="wiki-p">Шаги для воспроизведения:<br/>Отправить POST запрос на добавление продуктов в набор /api/v1/kits/2/products<br/>В теле указать:</div><span class="wiki-formatter" style="">
+    <div class="b-page-code b-page-code_multiline_yes i-bem" data-bem='{"b-page-code": {}}'>
+        
+            <code class="b-page-code__empty-line-numbers"></code>
+        
+        <code class="b-page-code__code no-highlight" style="white-space: pre;">{
+    &quot;productsList&quot;: [
+        {
+            &quot;id&quot;: 180,
+            &quot;quantity&quot;: 1
+        }
+    ]
+}</code>
+    </div>
+
+</span><div class="wiki-psep"></div><div class="wiki-p">Ожидаемый результат: В ответе ошибка — 404 Not found. Продукты не добавились</div><div class="wiki-psep"></div><div class="wiki-p">Фактический результат: В ответе выведен список продуктов в наборе, код — 200 OK. Появилась отдельная строка "quantity": 1</div><div class="wiki-psep"></div><span class="wiki-formatter" style="">
+    <div class="b-page-code b-page-code_multiline_yes i-bem" data-bem='{"b-page-code": {}}'>
+        
+            <code class="b-page-code__empty-line-numbers"></code>
+        
+        <code class="b-page-code__code no-highlight" style="white-space: pre;">{
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Под кино и сериалы&quot;,
+    &quot;productsList&quot;: [
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;Чипсы Lay&#39;s картофельные Лобстер рифленые&quot;,
+            &quot;price&quot;: 119,
+            &quot;weight&quot;: 150,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;name&quot;: &quot;Чипсы San Carlo Piu Gusto лайм и розовый перец&quot;,
+            &quot;price&quot;: 199,
+            &quot;weight&quot;: 150,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;name&quot;: &quot;Чипсы картофельные «Пакет картошки» с трюфелем&quot;,
+            &quot;price&quot;: 209,
+            &quot;weight&quot;: 100,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 40,
+            &quot;name&quot;: &quot;Чипсы кукурузные Delicados оригинальные&quot;,
+            &quot;price&quot;: 99,
+            &quot;weight&quot;: 150,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 41,
+            &quot;name&quot;: &quot;Чипсы кукурузные классик Salto Nachos&quot;,
+            &quot;price&quot;: 109,
+            &quot;weight&quot;: 60,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 42,
+            &quot;name&quot;: &quot;Чипсы Delicados кукурузные с кусочками лука и морской солью&quot;,
+            &quot;price&quot;: 99,
+            &quot;weight&quot;: 150,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 43,
+            &quot;name&quot;: &quot;Соус Dip Santa Maria Guacamole Style&quot;,
+            &quot;price&quot;: 249,
+            &quot;weight&quot;: 250,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 44,
+            &quot;name&quot;: &quot;Holy corn попкорн морская соль большой&quot;,
+            &quot;price&quot;: 179,
+            &quot;weight&quot;: 60,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 45,
+            &quot;name&quot;: &quot;Попкорн солёный Corin Corn&quot;,
+            &quot;price&quot;: 89,
+            &quot;weight&quot;: 45,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 46,
+            &quot;name&quot;: &quot;Пиво Bud 0.5% светлое пастеризованное безалкогольное&quot;,
+            &quot;price&quot;: 69,
+            &quot;weight&quot;: 450,
+            &quot;units&quot;: &quot;мл&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 47,
+            &quot;name&quot;: &quot;Пиво Stella Artois светлое безалкогольное&quot;,
+            &quot;price&quot;: 109,
+            &quot;weight&quot;: 450,
+            &quot;units&quot;: &quot;мл&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;Evervess Тоник напиток сильногазированный&quot;,
+            &quot;price&quot;: 89,
+            &quot;weight&quot;: 1,
+            &quot;units&quot;: &quot;л&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;Газированный напиток Pepsi&quot;,
+            &quot;price&quot;: 109,
+            &quot;weight&quot;: 1,
+            &quot;units&quot;: &quot;л&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;name&quot;: &quot;Sprite классический&quot;,
+            &quot;price&quot;: 79,
+            &quot;weight&quot;: 900,
+            &quot;units&quot;: &quot;мл&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 48,
+            &quot;name&quot;: &quot;Ritter Sport шоколад молочный с цельным миндалем&quot;,
+            &quot;price&quot;: 139,
+            &quot;weight&quot;: 100,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 49,
+            &quot;name&quot;: &quot;Шоколад молочный пористый c кокосом Milka&quot;,
+            &quot;price&quot;: 119,
+            &quot;weight&quot;: 97,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 50,
+            &quot;name&quot;: &quot;Шоколад молочный Alpen Gold с карамелизированными кусочками какао-бобов и кусочками карамели&quot;,
+            &quot;price&quot;: 89,
+            &quot;weight&quot;: 85,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 51,
+            &quot;name&quot;: &quot;Шоколад Alpen Gold с карамелью, мармеладом и печеньем&quot;,
+            &quot;price&quot;: 159,
+            &quot;weight&quot;: 160,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 52,
+            &quot;name&quot;: &quot;Шоколад Toblerone белый с медом и миндальной нугой&quot;,
+            &quot;price&quot;: 239,
+            &quot;weight&quot;: 100,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 53,
+            &quot;name&quot;: &quot;Шоколад Ritter Sport молочный с ромом, изюмом и орехами&quot;,
+            &quot;price&quot;: 119,
+            &quot;weight&quot;: 100,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 54,
+            &quot;name&quot;: &quot;Шоколад KitKat Senses Dark Orange&quot;,
+            &quot;price&quot;: 139,
+            &quot;weight&quot;: 80,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 55,
+            &quot;name&quot;: &quot;Конфеты Nesquik мини с нугой, молочной начинкой и хрустящим рисом&quot;,
+            &quot;price&quot;: 179,
+            &quot;weight&quot;: 171,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 56,
+            &quot;name&quot;: &quot;Гозинаки традиционные «Колхида» «Мёд и грецкий орех»&quot;,
+            &quot;price&quot;: 119,
+            &quot;weight&quot;: 50,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 57,
+            &quot;name&quot;: &quot;Печенье Oreo ванильный вкус,&quot;,
+            &quot;price&quot;: 119,
+            &quot;weight&quot;: 228,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 58,
+            &quot;name&quot;: &quot;Печенье Milka Choco Cookies&quot;,
+            &quot;price&quot;: 149,
+            &quot;weight&quot;: 168,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 59,
+            &quot;name&quot;: &quot;Крекер Tuc со вкусом Краба&quot;,
+            &quot;price&quot;: 59,
+            &quot;weight&quot;: 100,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;id&quot;: 60,
+            &quot;name&quot;: &quot;Печенье belVita «Утреннее» Soft Bakes с цельнозерновыми злаками и с начинкой с какао&quot;,
+            &quot;price&quot;: 219,
+            &quot;weight&quot;: 250,
+            &quot;units&quot;: &quot;г&quot;,
+            &quot;quantity&quot;: 1
+        },
+        {
+            &quot;quantity&quot;: 1
+        }
+    ],
+    &quot;productsCount&quot;: 28
+}</code>
+    </div>
+
+</span></div>
+<!--wf-ws v6.1-0--><br/></td></tr></table>Сформирован 03 августа 2022 в 15:28 пользователем Кирилл Одинцов с использованием tracker.yandex.ru</body></html>
