@@ -5,7 +5,7 @@
 •Тестирование мобильного приложения Яндекс.Самокат<br>
 •Тестирование API Яндекс.Самокат<br>
 
-Ссылка на проект<br>
+[Ссылка на проект](https://docs.google.com/spreadsheets/d/1cN-CmG9ci_v0GWxLflQGaSu8ZDkinpjcDHv00IhZGVM/edit#gid=1782311256)<br>
 [Примеры баг-репортов](https://drive.google.com/drive/folders/1TPWPbL6ql2drkCHa8CO8NDrmMymhGQOc?usp=sharing)<br>
 
 
